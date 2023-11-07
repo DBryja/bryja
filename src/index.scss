@@ -1,0 +1,31 @@
+@import "./SASS/mixins.scss";
+@import "./SASS/logo.scss";
+@import "./SASS/aboutMe.scss";
+@import "./SASS/homepage.scss";
+@import "./SASS/textRotator.scss";
+@import "./SASS/popUp.scss";
+@import "./SASS/revealAnim.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap");
+@font-face {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 800;
+  src: url("fonts/HankenGrotesk-ExtraBold.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "League Spartan", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

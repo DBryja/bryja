@@ -19,16 +19,19 @@
       display: inline-block;
       position: relative;
       user-select: none;
-      &::after {
+      --opacity: 1;
+      &:after {
         position: absolute;
         display: block;
-        content: "click me for contact!";
+        content: "click my name for contact!";
         right: 0;
         bottom: -1rem;
+        opacity: var(--opacity);
+        transition: opacity 0.5s linear;
+        font-size: 0.8rem;
         @include m {
-          bottom: 0;
+          bottom: 1rem;
         }
-        font-size: 1rem;
       }
     }
 

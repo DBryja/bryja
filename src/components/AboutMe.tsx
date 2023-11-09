@@ -11,6 +11,7 @@ export default function AboutMe() {
       scrollTrigger: {
         trigger: bryja,
         start: "top 90%",
+        scrub: true,
       },
       "--opacity": 0,
       duration: 1,

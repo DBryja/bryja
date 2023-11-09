@@ -21,3 +21,17 @@
     @content;
   }
 }
+
+@mixin boxing {
+  padding: 1rem;
+  @include m {
+    padding: 2rem;
+  }
+  @include l {
+    padding: 8rem;
+  }
+  @include xl {
+    padding: 0;
+    max-width: 1200px;
+  }
+}

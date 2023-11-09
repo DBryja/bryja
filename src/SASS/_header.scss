@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  max-height: 100vh;
+  // background-color: #0f0f0f;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+  &__logo {
+    height: 100%;
+    max-height: 20%;
+    max-width: 70%;
+    filter: drop-shadow(0px 5px 15px rgba(255, 255, 255, 0.2));
+    /* Similar syntax to box-shadow */
+  }
+  &__scrollDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    span {
+      font-size: 0.7rem;
+    }
+    svg {
+      animation: fly 3s cubic-bezier(0.25, 0.75, 0.5, 1.25) infinite;
+    }
+    font-size: 2rem;
+    position: absolute;
+    bottom: 10%;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes fly {
+  0%,
+  100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}

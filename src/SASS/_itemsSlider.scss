@@ -1,0 +1,53 @@
+.items-slider {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1rem 0;
+  @include m {
+    font-size: 5rem;
+    row-gap: 2rem;
+    padding: 2rem 0;
+  }
+  @include l {
+    font-size: 3rem;
+    row-gap: 5rem;
+    padding: 5rem 0;
+  }
+  .bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    column-gap: 1rem;
+    @include boxing;
+    justify-content: center;
+    @include m {
+      column-gap: 6rem;
+    }
+    @include l {
+      column-gap: 8rem;
+    }
+
+    //  &:nth-child(even) {
+    //    justify-content: end;
+    //    transform: translate(0%, 0);
+    //  }
+    //  &:nth-child(odd) {
+    //    justify-content: start;
+    //    transform: translate(0%, 0);
+    //  }
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      column-gap: 1rem;
+    }
+  }
+}

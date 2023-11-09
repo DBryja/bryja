@@ -4,6 +4,7 @@
   font-family: "League Spartan";
   font-weight: bold;
   position: relative;
+  @include boxing;
   h1 {
     position: relative;
     .bryja {

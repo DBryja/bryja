@@ -15,55 +15,31 @@ import {
   SiPostman,
   SiMysql,
 } from "react-icons/si";
+import BarsSlider from "./BarsSlider";
 
-const type1 = [
+const items = [
   [<SiReact />, "React"],
   [<SiTypescript />, "TypeScript"],
   [<SiJavascript />, "JavaScript"],
   [<SiNodedotjs />, "NodeJS"],
   [<SiExpress />, "ExpressJS"],
   [<SiMysql />, "MySQL"],
-];
-const type2 = [
   [<SiCss3 />, "CSS"],
   [<SiSass />, "SASS"],
   [<SiTailwindcss />, "TailwindCSS"],
   [<SiGreensock />, "GSAP"],
-];
-const type3 = [
-  [<SiVisualstudiocode />, "Visual Studio Code"],
+  [<SiVisualstudiocode />, "VSC"],
   [<SiFigma />, "Figma"],
   [<SiPostman />, "Postman"],
   [<SiGit />, "Git"],
   [<SiGithub />, "GitHub"],
 ];
 
-const techs = [type1, type2, type3];
-
 export default function Details() {
   return (
     <div className="details">
       <h3 className="reveal-type">Technologies and tools I use:</h3>
-      <div className="slider">
-        {/* {techs.map((type)=>{
-          type.map((item)=>{
-            return <span>{item[0]},{item[1]}</span>
-          })
-        })} */}
-        {techs.map((type) => {
-          return (
-            <div className="slider__bar bar">
-              {type.map((item) => {
-                return (
-                  <span className="bar__item">
-                    {item[0]} {item[1]}
-                  </span>
-                );
-              })}
-            </div>
-          );
-        })}
-      </div>
+      <BarsSlider items={items} />
     </div>
   );
 }

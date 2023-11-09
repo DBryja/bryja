@@ -6,13 +6,6 @@
   position: relative;
   h1 {
     position: relative;
-    font-size: 6rem;
-    @include m {
-      font-size: 8rem;
-    }
-    @include l {
-      font-size: 10rem;
-    }
     .bryja {
       cursor: pointer;
       // text-decoration: underline;
@@ -46,25 +39,7 @@
   }
 
   h2 {
-    font-size: 3rem;
-    line-height: 100%;
-    margin-top: 2rem;
     color: rgb(45, 83, 210);
     text-align: right;
-    @include m {
-      font-size: 5rem;
-      margin-top: 5rem;
-      line-height: 85%;
-    }
-    @include l {
-      font-size: 6rem;
-    }
-  }
-  p {
-    margin-top: 2rem;
-    @include m {
-      margin-top: 5rem;
-    }
-    font-size: 2rem;
   }
 }

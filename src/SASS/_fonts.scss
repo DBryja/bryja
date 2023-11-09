@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap");
+@font-face {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 800;
+  src: url("../fonts/HankenGrotesk-ExtraBold.ttf") format("truetype");
+}
+
+h1 {
+  font-size: 6rem;
+  @include m {
+    font-size: 8rem;
+  }
+  @include l {
+    font-size: 10rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 100%;
+  margin-top: 2rem;
+  @include m {
+    font-size: 5rem;
+    margin-top: 5rem;
+    line-height: 85%;
+  }
+  @include l {
+    font-size: 6rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  @include m {
+    font-size: 3rem;
+  }
+  @include l {
+    font-size: 4rem;
+  }
+}
+
+p {
+  font-size: 2rem;
+  margin-top: 2rem;
+  @include m {
+    margin-top: 5rem;
+  }
+}

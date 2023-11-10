@@ -11,6 +11,7 @@ export default function AboutMe() {
       scrollTrigger: {
         trigger: bryja,
         start: "top 90%",
+        end: "top 50%",
         scrub: true,
       },
       "--opacity": 0,
@@ -25,7 +26,7 @@ export default function AboutMe() {
         <span className="reveal-type">Hi! My name is</span>
         <span className="bryja reveal-type">Dawid Bryja.</span>
       </h1>
-      <h2 className="reveal-type right">I am building things for web.</h2>
+      <h2 className="reveal-type">I am building things for web.</h2>
     </div>
   );
 }

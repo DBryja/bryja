@@ -23,15 +23,16 @@
 }
 
 @mixin boxing {
-  padding: 1rem;
+  padding: 0 1rem;
   @include m {
-    padding: 2rem;
-  }
-  @include l {
-    padding: 8rem;
+    padding: 0 2rem;
   }
   @include xl {
-    padding: 0;
+    padding: 0 0;
     max-width: 1200px;
   }
 }
+
+$black: #000;
+$white: #fff;
+$blue: #2d53d2;

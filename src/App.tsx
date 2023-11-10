@@ -7,6 +7,7 @@ import Lenis from "@studio-freight/lenis";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Details from "./components/Details";
+import MyProjects from "./components/MyProjects";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       <Header />
       <AboutMe />
       <Details />
+      <MyProjects />
     </div>
   );
 }

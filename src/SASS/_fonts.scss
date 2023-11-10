@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap");
 @font-face {
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: 800;
@@ -6,11 +6,15 @@
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
+  line-height: 90%;
   @include m {
-    font-size: 8rem;
+    font-size: 7rem;
   }
   @include l {
+    font-size: 8rem;
+  }
+  @include xl {
     font-size: 10rem;
   }
 }
@@ -22,7 +26,6 @@ h2 {
   @include m {
     font-size: 5rem;
     margin-top: 5rem;
-    line-height: 85%;
   }
   @include l {
     font-size: 6rem;
@@ -40,9 +43,15 @@ h3 {
 }
 
 p {
-  font-size: 2rem;
-  margin-top: 2rem;
+  font-size: 1rem;
   @include m {
-    margin-top: 5rem;
+    font-size: 1.2rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+  @include m {
+    font-size: 2.5rem;
   }
 }

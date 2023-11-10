@@ -9,38 +9,32 @@
     position: relative;
     .bryja {
       cursor: pointer;
-      // text-decoration: underline;
       display: inline-block;
-      position: relative;
       user-select: none;
       --opacity: 1;
-      &:after {
-        position: absolute;
-        display: block;
-        content: "click my name for contact!";
-        right: 0;
-        bottom: -1rem;
-        opacity: var(--opacity);
-        transition: opacity 0.5s linear;
-        font-size: 0.8rem;
-        @include m {
-          bottom: 1rem;
+      div.word:last-child {
+        div:nth-child(4) {
+          position: relative;
+          &:after {
+            position: absolute;
+            display: block;
+            content: "click my name for contact!";
+            white-space: nowrap;
+            font-weight: 300;
+            left: 100%;
+            bottom: 0;
+            opacity: var(--opacity);
+            transition: opacity 0.5s linear;
+            font-size: 0.8rem;
+            line-height: 100%;
+          }
         }
       }
     }
-
-    //  .popUp {
-    //    bottom: 20px;
-    //    left: 10px;
-    //    @include m {
-    //      top: 0%;
-    //      left: 100%;
-    //    }
-    //  }
   }
 
   h2 {
-    color: rgb(45, 83, 210);
+    color: $blue;
     text-align: right;
   }
 }

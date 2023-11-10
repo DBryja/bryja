@@ -1,0 +1,78 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 5px solid $black;
+  margin-top: 1rem;
+  //   background-color: rgba(255, 0, 0, 0.3);
+  @include l {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4 {
+      margin-bottom: 0.5rem;
+      @include l {
+        margin-bottom: 1rem;
+      }
+    }
+    div.desc {
+      flex-grow: 1;
+      @include l {
+        padding-left: 1rem;
+      }
+      ul {
+        padding-left: 1.5rem;
+        @include l {
+          padding-left: 2rem;
+        }
+      }
+    }
+    div.links {
+      font-size: 1rem;
+      text-align: end;
+      justify-self: flex-end;
+      @include l {
+        text-align: start;
+
+        font-size: 1.5rem;
+      }
+      a {
+        text-decoration: none;
+        color: $blue;
+      }
+    }
+    .break {
+      display: block;
+      padding-top: 0.5rem;
+      @include l {
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  &__graphics {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid black;
+    padding: 0.5rem 0 0 0;
+    img,
+    video {
+      max-width: 100%;
+      display: block;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+    @include l {
+      padding: 1rem 0 1rem 1rem;
+      border-left: 3px solid black;
+    }
+  }
+}

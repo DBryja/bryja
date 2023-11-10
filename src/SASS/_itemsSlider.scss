@@ -1,53 +1,57 @@
 .items-slider {
-  background-color: black;
+  background-color: $black;
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
   width: 100vw;
   align-items: center;
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+  row-gap: 0.5rem;
   padding: 1rem 0;
+  position: relative;
+  z-index: 2;
   @include m {
-    font-size: 5rem;
+    font-size: 2rem;
     row-gap: 2rem;
     padding: 2rem 0;
   }
   @include l {
-    font-size: 3rem;
     row-gap: 5rem;
     padding: 5rem 0;
   }
-  .bar {
+  @include xl {
+    font-size: 3rem;
+  }
+  &__bar {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-shrink: 1;
     width: 100%;
-    column-gap: 1rem;
-    @include boxing;
-    justify-content: center;
-    @include m {
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    @include l {
+      max-width: 90vw;
+      column-gap: 4rem;
+      &:nth-child(even) {
+        justify-content: start;
+      }
+      &:nth-child(odd) {
+        justify-content: end;
+      }
+    }
+    @include xl {
+      max-width: 80vw;
       column-gap: 6rem;
     }
-    @include l {
-      column-gap: 8rem;
-    }
-
-    //  &:nth-child(even) {
-    //    justify-content: end;
-    //    transform: translate(0%, 0);
-    //  }
-    //  &:nth-child(odd) {
-    //    justify-content: start;
-    //    transform: translate(0%, 0);
-    //  }
-
+  }
+  .bar {
     &__item {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
-      white-space: nowrap;
-      column-gap: 1rem;
+      column-gap: 0.2rem;
+      @include m {
+        column-gap: 1rem;
+      }
     }
   }
 }

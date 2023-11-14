@@ -1,32 +1,26 @@
-// import TextRotator from "./TextRotator";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import { useEffect } from "react";
-gsap.registerPlugin(ScrollTrigger);
+import { fadeIn } from "../hooks_utils/animations";
 
 export default function AboutMe() {
+  const yearsOld = new Date().getFullYear() - 2002;
   useEffect(() => {
-    const bryja = document.querySelector(".bryja");
-    gsap.from(bryja, {
-      scrollTrigger: {
-        trigger: bryja,
-        start: "top 90%",
-        end: "top 50%",
-        scrub: true,
-      },
-      "--opacity": 0,
-      duration: 1,
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const fadeInEls = document.querySelectorAll(".content--fadeIn");
+    fadeIn(fadeInEls, 1);
   }, []);
-
   return (
     <div className="aboutMe">
-      <h1>
-        <span className="reveal-type">Hi! My name is</span>
-        <span className="bryja reveal-type">Dawid Bryja.</span>
-      </h1>
-      <h2 className="reveal-type">I am building things for web.</h2>
+      <h3 className="reveal-type">About me</h3>
+      <div className="aboutMe__inside">
+        <div className="content content--fadeIn">
+          I am a {yearsOld}-year-old student at the <span>Krakow University of Technology</span> aspiring to become a
+          professional web developer. <br />
+          My dream is to work on <img src="/images/awwwards.svg" alt="awwwards" className="awwwards" /> winning
+          websites. <br />
+          I reside in a small mountainous town near the Slovakian border.
+          <br />
+          In my leisure time, I enjoy cooking, hiking and engaging in both computer and board games.
+        </div>
+      </div>
     </div>
   );
 }

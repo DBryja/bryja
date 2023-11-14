@@ -1,8 +1,7 @@
 import { useEffect } from "react";
-import { ScrollTrigger } from "gsap/all";
-import { slideInAnim, lenisScrollUpdate } from "../hooks_utils/animations";
 import ProjectCard from "./ProjectCard";
 import { SiGithub } from "react-icons/si";
+import { slideInAnim } from "../hooks_utils/animations";
 
 const project1 = {
   heading: "Buddy Explorer",
@@ -37,11 +36,8 @@ export default function MyProjects() {
   useEffect(() => {
     const bars = document.querySelectorAll(".project-card--slideIn");
     slideInAnim(bars, 1);
-    const lenis = lenisScrollUpdate();
-    lenis.on("scroll", () => {
-      ScrollTrigger.update();
-    });
-  }, []);
+  });
+
   return (
     <div className="my-projects">
       <h3 className="reveal-type">My projects:</h3>

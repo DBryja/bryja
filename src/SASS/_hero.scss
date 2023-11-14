@@ -1,0 +1,40 @@
+@import "./mixins.scss";
+
+.hero {
+  font-family: "League Spartan";
+  font-weight: bold;
+  position: relative;
+  @include boxing;
+  h1 {
+    position: relative;
+    .bryja {
+      cursor: pointer;
+      display: inline-block;
+      user-select: none;
+      --opacity: 1;
+      div.word:last-child {
+        div:nth-child(4) {
+          position: relative;
+          &:after {
+            position: absolute;
+            display: block;
+            content: "click my name for contact!";
+            white-space: nowrap;
+            font-weight: 300;
+            left: 100%;
+            bottom: 0;
+            opacity: var(--opacity);
+            transition: opacity 0.5s linear;
+            font-size: 0.8rem;
+            line-height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  h2 {
+    color: $blue;
+    text-align: right;
+  }
+}

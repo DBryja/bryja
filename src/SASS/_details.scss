@@ -1,14 +1,3 @@
 .details {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3rem;
-  @include l {
-    margin-top: 5rem;
-  }
-  h3 {
-    @include boxing;
-    width: 100%;
-  }
+  @include blackBox;
 }

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { lenisScrollUpdate, slideInAnim } from "../hooks_utils/animations";
+import { slideInAnim } from "../hooks_utils/animations";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
@@ -14,11 +14,7 @@ export default function BarsSlider({ items }: IBarsSlider) {
   useEffect(() => {
     const bars = document.querySelectorAll(".items-slider__bar");
     slideInAnim(bars, 1.5);
-    const lenis = lenisScrollUpdate();
-    lenis.on("scroll", () => {
-      ScrollTrigger.update();
-    });
-  }, [items]);
+  }, []);
 
   return (
     <div className="items-slider">

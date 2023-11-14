@@ -1,40 +1,42 @@
-@import "./mixins.scss";
-
 .aboutMe {
-  font-family: "League Spartan";
-  font-weight: bold;
-  position: relative;
-  @include boxing;
-  h1 {
-    position: relative;
-    .bryja {
-      cursor: pointer;
-      display: inline-block;
-      user-select: none;
-      --opacity: 1;
-      div.word:last-child {
-        div:nth-child(4) {
-          position: relative;
-          &:after {
-            position: absolute;
-            display: block;
-            content: "click my name for contact!";
-            white-space: nowrap;
-            font-weight: 300;
-            left: 100%;
-            bottom: 0;
-            opacity: var(--opacity);
-            transition: opacity 0.5s linear;
-            font-size: 0.8rem;
-            line-height: 100%;
-          }
+  @include blackBox;
+  &__inside {
+    background-color: $black;
+    height: 500px;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    .content {
+      @include boxing;
+      width: 100%;
+      margin-top: 2rem;
+      color: white;
+      font-size: 2rem;
+      line-height: 150%;
+      span {
+        color: $white;
+        text-decoration: underline;
+        text-decoration-color: #013571;
+        position: relative;
+        display: inline-block;
+        margin-right: 3.2rem;
+        &::after {
+          display: block;
+          position: absolute;
+          content: "";
+          background-image: url("../images/PK-logo.png");
+          background-size: contain;
+          aspect-ratio: 1;
+          height: calc(100% - 2px);
+          left: 100%;
+          bottom: 0;
         }
       }
+      .awwwards {
+        display: inline-block;
+        height: 1.8rem;
+      }
     }
-  }
-
-  h2 {
-    color: $blue;
-    text-align: right;
   }
 }

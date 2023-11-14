@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import SplitType from "split-type";
 import Lenis from "@studio-freight/lenis";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,6 +15,40 @@ export function slideInAnim(items: NodeListOf<Element>, duration: number) {
       xPercent: multiplier * 100,
       opacity: 0,
       duration: duration,
+    });
+  });
+}
+
+export function fadeIn(items: NodeListOf<Element>, duration: number) {
+  items.forEach((item) => {
+    gsap.from(item, {
+      scrollTrigger: {
+        trigger: item,
+        start: "top 80%",
+      },
+      stagger: 1,
+      opacity: 0,
+      x: -20,
+      duration: duration,
+    });
+  });
+}
+
+export function staggerSlide(items: NodeListOf<Element>) {
+  items.forEach((item) => {
+    const text = new SplitType(item as HTMLElement, { types: "chars,words" });
+    gsap.from(text.chars, {
+      scrollTrigger: {
+        trigger: item,
+        start: "top 90%",
+        end: "top 65%",
+        scrub: true,
+      },
+      transformOrigin: "top",
+      scaleY: 0.5,
+      y: -50,
+      opacity: 0,
+      stagger: 0.1,
     });
   });
 }

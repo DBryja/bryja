@@ -1,10 +1,8 @@
 .my-projects {
   @include boxing;
-  padding-bottom: 200px !important;
-
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  @include sectionGap;
   @include xl {
     row-gap: 2rem;
   }

@@ -36,7 +36,7 @@ export default function MyProjects() {
   useEffect(() => {
     const bars = document.querySelectorAll(".project-card--slideIn");
     slideInAnim(bars, 1);
-  });
+  }, []);
 
   return (
     <div className="my-projects">

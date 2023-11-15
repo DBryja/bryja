@@ -12,6 +12,16 @@
 @import "./SASS/projectCard";
 @import "./SASS/myProjects";
 @import "./SASS/aboutMe";
+@import "./SASS/contact";
+
+html.lenis {
+  height: auto;
+}
+.lenis {
+  &.lenis-smooth {
+    scroll-behavior: auto;
+  }
+}
 
 body {
   margin: 0;
@@ -27,6 +37,10 @@ body {
   width: 100vw;
   display: flex;
   justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 * {

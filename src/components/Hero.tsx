@@ -24,7 +24,9 @@ export default function Hero() {
     <div className="hero">
       <h1>
         <span className="reveal-type">Hi! My name is</span>
-        <span className="bryja reveal-type">Dawid Bryja.</span>
+        <span className="bryja reveal-type" onClick={() => window.scrollTo(0, document.body.scrollHeight)}>
+          Dawid Bryja.
+        </span>
       </h1>
       <h2 className="reveal-type">I am building things for web.</h2>
     </div>

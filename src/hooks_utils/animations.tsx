@@ -54,7 +54,12 @@ export function staggerSlide(items: NodeListOf<Element>) {
 }
 
 export function lenisScrollUpdate() {
-  const lenis = new Lenis();
+  const lenis = new Lenis({
+    smoothTouch: true,
+    touchMultiplier: 1,
+    // syncTouch: true,
+    gestureOrientation: "vertical",
+  });
   function raf(time: any) {
     lenis.raf(time);
     requestAnimationFrame(raf);

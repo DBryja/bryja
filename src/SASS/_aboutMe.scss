@@ -1,8 +1,8 @@
 .aboutMe {
   @include blackBox;
+  @include sectionGap;
   &__inside {
     background-color: $black;
-    height: 500px;
     width: 100vw;
     color: white;
     display: flex;
@@ -10,32 +10,45 @@
     .content {
       @include boxing;
       width: 100%;
-      margin-top: 2rem;
+      margin: 1rem 0;
       color: white;
-      font-size: 2rem;
+      font-size: 1rem;
       line-height: 150%;
-      span {
+      @include m {
+        margin: 2rem 0;
+        font-size: 2rem;
+      }
+      a.pk {
         color: $white;
         text-decoration: underline;
-        text-decoration-color: #013571;
         position: relative;
         display: inline-block;
         margin-right: 3.2rem;
-        &::after {
-          display: block;
-          position: absolute;
-          content: "";
-          background-image: url("../images/PK-logo.png");
-          background-size: contain;
-          aspect-ratio: 1;
-          height: calc(100% - 2px);
-          left: 100%;
-          bottom: 0;
+        text-decoration: none;
+        transition: color ease-in-out 0.1s;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        @include hoverUnderline($blue);
+        img {
+          margin-left: 2px;
+          display: inline-block;
+          height: 1.5rem;
+          @include m {
+            height: 3rem;
+          }
         }
       }
-      .awwwards {
-        display: inline-block;
-        height: 1.8rem;
+      a.awwwards {
+        @include hoverUnderline($white);
+        display: inline-flex;
+        img {
+          display: inline-block;
+          height: 0.8rem;
+          @include m {
+            height: 1.8rem;
+          }
+        }
       }
     }
   }

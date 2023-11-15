@@ -1,7 +1,9 @@
 import gsap from "gsap";
 import { useRef, useEffect } from "react";
 import { BiChevronsDown } from "react-icons/bi";
-import Lenis from "@studio-freight/lenis";
+// import Lenis from "@studio-freight/lenis";
+import SplitType from "split-type";
+import { lenisScrollUpdate } from "../hooks_utils/animations";
 
 export default function Header() {
   const headerRef = useRef(null);
@@ -11,25 +13,38 @@ export default function Header() {
     const header = headerRef.current;
     const logo = logoRef.current;
     const scrollDown = scrollDownRef.current;
+    let logoChars: HTMLElement[];
+    if (logo) {
+      new SplitType(logo as HTMLElement, { types: "chars", charClass: "logo__char active" });
+      logoChars = Array.from(document.querySelectorAll(".logo__char") as unknown as HTMLCollectionOf<HTMLElement>);
+      logoChars.forEach((item, i) => {
+        item.style.setProperty("--char-index", `${i}`);
+      });
+    }
 
     const tl = gsap.timeline({ paused: true });
-    tl.to(header, { maxHeight: "15vh" });
-    tl.to(logo, { maxHeight: "40%" }, "<");
+    tl.to(header, { maxHeight: "12vh" });
+    const fz = window.innerWidth < 520 ? "2rem" : "3rem";
+    tl.to(logo, { fontSize: fz }, "<");
 
-    const lenis = new Lenis();
-    lenis.on("scroll", () => {
+    const lenisHeader = lenisScrollUpdate();
+    lenisHeader.on("scroll", () => {
       tl.progress(window.scrollY / (window.innerHeight / 2));
       gsap.to(scrollDown, { opacity: 0 });
     });
-    function raf(time: any) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
+    gsap.ticker.lagSmoothing(0);
   }, []);
+
+  // const fun = (item: HTMLElement) =>
+  // tl.progress() < 0.9 ? item.classList.add("active") : item.classList.remove("active");
+  // logoChars.forEach((item) => fun(item));
   return (
     <div className="header" ref={headerRef}>
-      <img src="/images/logo.svg" alt="logo" className="header__logo" ref={logoRef} />
+      {/* <img src="/images/logo.svg" alt="logo" className="header__logo" ref={logoRef} />
+       */}
+      <span className="header__logo logo" ref={logoRef}>
+        &#123;bryja&#125;_
+      </span>
       <div className="header__scrollDown" ref={scrollDownRef}>
         <span>scroll down</span>
         <BiChevronsDown />

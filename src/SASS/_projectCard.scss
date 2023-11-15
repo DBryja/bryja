@@ -15,11 +15,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 0.8rem;
     h4 {
       margin-bottom: 0.5rem;
       @include l {
         margin-bottom: 1rem;
       }
+    }
+    @include m {
+      font-size: 1rem;
     }
     div.desc {
       flex-grow: 1;
@@ -39,12 +43,12 @@
       justify-self: flex-end;
       @include l {
         text-align: start;
-
         font-size: 1.5rem;
       }
       a {
         text-decoration: none;
         color: $blue;
+        @include hoverUnderline($blue);
       }
     }
     .break {

@@ -6,7 +6,7 @@ interface IProjectCard {
 }
 export default function ProjectCard({ heading, desc, links, graphics }: IProjectCard) {
   return (
-    <div className="project-card slideIn">
+    <div className="project-card project-card--slideIn">
       <div className="project-card__text">
         <h4>{heading}</h4>
         <div className="desc">{desc}</div>

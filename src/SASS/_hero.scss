@@ -11,6 +11,8 @@
       cursor: pointer;
       display: inline-block;
       user-select: none;
+      color: $black;
+      text-decoration: none;
       --opacity: 1;
       div.word:last-child {
         div:nth-child(4) {

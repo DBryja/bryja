@@ -9,6 +9,8 @@ import Hero from "./components/Hero";
 import Details from "./components/Details";
 import MyProjects from "./components/MyProjects";
 import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+import Map from "./components/Map";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -25,38 +27,8 @@ function App() {
       <Details />
       <MyProjects />
       <AboutMe />
-      <div className="contact">
-        <div className="contact__inside">
-          <div className="content">
-            <h3>Contact</h3>
-            <ul className="ul--arrow">
-              <li>
-                <a href="https://www.facebook.com/BryjaD/" target="_blank" rel="noreferrer">
-                  facebook
-                </a>
-              </li>
-              <li>
-                <a href="https://www.discordapp.com/users/1027836544859508817" target="_blank" rel="noreferrer">
-                  discord
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/dawid-bryja-898134249/" target="_blank" rel="noreferrer">
-                  linkedin
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/DBryja" target="_blank" rel="noreferrer">
-                  github
-                </a>
-              </li>
-              <li>
-                <a href="mailto:dawbryja@gmail.com">dawbryja@gmail.com</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <Contact />
+      <Map />
     </div>
   );
 }

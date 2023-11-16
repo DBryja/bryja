@@ -55,6 +55,7 @@ export function staggerSlide(items: NodeListOf<Element>) {
 
 export function lenisScrollUpdate() {
   const lenis = new Lenis({
+    smoothWheel: true,
     smoothTouch: true,
     touchMultiplier: 1,
     // syncTouch: true,

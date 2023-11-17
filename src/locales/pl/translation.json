@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "h1": "Cześć! Jestem",
+    "h2": "Tworzę różne rzeczy do internetu.",
+    "after": "Klinij aby się skontaktować!"
+  },
+  "technologies": {
+    "h3": "Technologie i narzędzia:"
+  },
+  "projects": {
+    "h3": "Moje projekty:"
+  },
+  "aboutMe": {
+    "h3": "O mnie",
+    "span1": "Jestem",
+    "span2": " letnim studentem na",
+    "pk": "Politechnice Krakowskiej",
+    "span3": "Aspiruję by zostać profesjonalnym web developerem.",
+    "span4": "Marzę, aby pracować nad stronami wygrywającymi nagrody",
+    "span5": "",
+    "span6": "Mieszkam w niewielkiej miejscowości w Beskidzie Żywieckim.",
+    "span7": "W wolnym czasie lubię gotować, wędrować po górach oraz grać w gry komputerowe i planszowe"
+  },
+  "contact": {
+    "h3": "Kontakt",
+    "currently": "Aktualnie szukam stażu bądź pracy na stanowisku juniora.",
+    "table": {
+      "tr1": {
+        "td1": "Zdalnie",
+        "td2": "polski(ojczysty), angielski(b2)"
+      },
+      "tr2": {
+        "td1": "Hybrydowo",
+        "td2": "Kraków, Katowice, Bielsko-Biała"
+      },
+      "tr3": {
+        "td1": "Stacjonarnie",
+        "td2": "Kraków, Bielsko-Biała"
+      }
+    },
+    "ps": {
+      "span1": "Potrzebujesz własnej strony?",
+      "span2": "Napisz do mnie i bierzemy się do pracy! :^)"
+    }
+  }
+}

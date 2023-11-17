@@ -5,8 +5,12 @@
   font-weight: bold;
   position: relative;
   @include boxing;
+  width: 100%;
   h1 {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     .bryja {
       cursor: pointer;
       display: inline-block;
@@ -20,7 +24,7 @@
           &:after {
             position: absolute;
             display: block;
-            content: "click my name for contact!";
+            content: attr(data-after);
             white-space: nowrap;
             font-weight: 300;
             left: 100%;
@@ -34,7 +38,6 @@
       }
     }
   }
-
   h2 {
     color: $blue;
     text-align: right;

@@ -90,3 +90,11 @@
     transform: translate(2%, 10%) rotate(3deg);
   }
 }
+
+option {
+  &.en {
+    background-image: url("../images/flag-en.jpg");
+    width: 100px;
+    height: 100px;
+  }
+}

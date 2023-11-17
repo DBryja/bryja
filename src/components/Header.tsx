@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import { useRef, useEffect } from "react";
 import { BiChevronsDown } from "react-icons/bi";
-// import Lenis from "@studio-freight/lenis";
 import SplitType from "split-type";
 import { lenisScrollUpdate } from "../hooks_utils/animations";
 
@@ -49,6 +48,7 @@ export default function Header() {
         <span>scroll down</span>
         <BiChevronsDown />
       </div>
+      4
     </div>
   );
 }

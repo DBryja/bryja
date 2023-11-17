@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { fadeIn } from "../hooks_utils/animations";
+import { useTranslation } from "react-i18next";
 
 export default function AboutMe() {
   const yearsOld = new Date().getFullYear() - 2002;
@@ -7,25 +8,29 @@ export default function AboutMe() {
     const fadeInEls = document.querySelectorAll(".content--fadeIn");
     fadeIn(fadeInEls, 1);
   }, []);
+
+  const { t } = useTranslation();
   return (
     <div className="aboutMe">
-      <h3 className="reveal-type">About me</h3>
+      <h3 className="reveal-type">{t("aboutMe.h3")}</h3>
       <div className="aboutMe__inside">
         <div className="content content--fadeIn">
-          I am a {yearsOld}-year-old student at the{" "}
+          {t("aboutMe.span1")} {yearsOld}
+          {t("aboutMe.span2")}{" "}
           <a className="pk" href="https://www.pk.edu.pl" target="_blank" rel="noreferrer">
-            Krakow University of Technology
-            <img src="/images/pk.svg" alt="pk" />
-          </a>{" "}
-          eager to learn and aspiring to become a professional web developer. <br />
-          My dream is to work on{" "}
+            {t("aboutMe.pk")}
+            <img src="/images/pk.svg" alt="pk" />.
+          </a>
+          <br />
+          {t("aboutMe.span3")} <br />
+          {t("aboutMe.span4")}{" "}
           <a href="https://www.awwwards.com/" target="_blank" rel="noreferrer" className="awwwards">
             <img src="/images/awwwards.svg" alt="awwwards" />
           </a>{" "}
-          winning websites. <br />
-          I reside in a small mountainous town near the Slovakian border.
+          {t("aboutMe.span5")} <br />
+          {t("aboutMe.span6")}
           <br />
-          In my leisure time, I enjoy cooking, hiking and engaging in both computer and board games.
+          {t("aboutMe.span7")}
         </div>
       </div>
     </div>

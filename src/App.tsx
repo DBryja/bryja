@@ -10,6 +10,7 @@ import Details from "./components/Details";
 import MyProjects from "./components/MyProjects";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
+import LanguageSelector from "./components/LanguageSelector";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <div className="homepage">
       <Header />
       <Hero />
+      <LanguageSelector />
       <Details />
       <MyProjects />
       <AboutMe />

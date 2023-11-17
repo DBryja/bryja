@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import { SiGithub } from "react-icons/si";
 import { slideInAnim } from "../hooks_utils/animations";
+import { useTranslation } from "react-i18next";
 
 const project1 = {
   heading: "Buddy Explorer",
@@ -38,9 +39,11 @@ export default function MyProjects() {
     slideInAnim(bars, 1);
   }, []);
 
+  const { t } = useTranslation();
+
   return (
     <div className="my-projects">
-      <h3 className="reveal-type">My projects:</h3>
+      <h3 className="reveal-type">{t("projects.h3")}</h3>
       {projects.map((project, key) => (
         <ProjectCard key={key} {...project} />
       ))}

@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "heading": {
+      "en": "Hi! My name is",
+      "pl": "Cześć! Nazywam się"
+    },
+    "sub": {
+      "en": "I am building things for web.",
+      "pl": "Tworzę "
+    }
+  },
+  "details": {
+    "en": {},
+    "pl": {}
+  },
+  "myProjects": {
+    "en": {},
+    "pl": {}
+  },
+  "aboutMe": {
+    "en": {},
+    "pl": {}
+  },
+  "contact": {
+    "en": {},
+    "pl": {}
+  }
+}

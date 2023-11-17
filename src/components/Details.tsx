@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import {
   SiReact,
   SiTypescript,
@@ -36,9 +38,10 @@ const items = [
 ];
 
 export default function Details() {
+  const { t } = useTranslation();
   return (
     <div className="details">
-      <h3 className="reveal-type">Technologies and tools I use:</h3>
+      <h3 className="reveal-type">{t("technologies.h3")}</h3>
       <BarsSlider items={items} />
     </div>
   );

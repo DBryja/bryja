@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "h1": "Hi! My name is",
+    "h2": "I am building things for web.",
+    "after": "Click me for contact!"
+  },
+  "technologies": {
+    "h3": "Technologies and tools I use:"
+  },
+  "projects": {
+    "h3": "My projects:"
+  },
+  "aboutMe": {
+    "h3": "About me",
+    "span1": "I am a",
+    "span2": "-year-old student at the",
+    "pk": "Krakow University of Technology",
+    "span3": "I am aspiring to become a professional web developer.",
+    "span4": "My dream is to work on",
+    "span5": "winning websites",
+    "span6": "I reside in a small mountainous town in Beskid Żywiecki.",
+    "span7": "In my leisure time, I enjoy cooking, hiking and engaging in both computer and board games."
+  },
+  "contact": {
+    "h3": "Contact",
+    "currently": "I am currently looking for an intership or a junior position.",
+    "table": {
+      "tr1": {
+        "td1": "Remote",
+        "td2": "polish(native), english(b2)"
+      },
+      "tr2": {
+        "td1": "Hybrid",
+        "td2": "Kraków, Katowice, Bielsko-Biała"
+      },
+      "tr3": {
+        "td1": "Stationary",
+        "td2": "Kraków, Bielsko-Biała"
+      }
+    },
+    "ps": {
+      "span1": "Need your own website?",
+      "span2": "Contact me and We'll get to work! :^)"
+    }
+  }
+}

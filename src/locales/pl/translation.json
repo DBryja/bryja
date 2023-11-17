@@ -1,4 +1,7 @@
 {
+  "header": {
+    "scroll": "przewiń w dół"
+  },
   "hero": {
     "h1": "Cześć! Jestem",
     "h2": "Tworzę różne rzeczy do internetu.",
@@ -19,11 +22,11 @@
     "span4": "Marzę, aby pracować nad stronami wygrywającymi nagrody",
     "span5": "",
     "span6": "Mieszkam w niewielkiej miejscowości w Beskidzie Żywieckim.",
-    "span7": "W wolnym czasie lubię gotować, wędrować po górach oraz grać w gry komputerowe i planszowe"
+    "span7": "W wolnym czasie lubię gotować, wędrować po górach oraz grać w gry komputerowe i planszowe."
   },
   "contact": {
     "h3": "Kontakt",
-    "currently": "Aktualnie szukam stażu bądź pracy na stanowisku juniora.",
+    "currently": "Aktualnie szukam stażu, bądź pracy na stanowisku juniora.",
     "table": {
       "tr1": {
         "td1": "Zdalnie",

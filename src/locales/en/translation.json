@@ -1,4 +1,7 @@
 {
+  "header": {
+    "scroll": "scroll down"
+  },
   "hero": {
     "h1": "Hi! My name is",
     "h2": "I am building things for web.",

@@ -18,7 +18,7 @@ const listItems: IItem[] = [
   },
   {
     name: "linkedin",
-    link: "https://www.linkedin.com/in/dawid-bryja-898134249/",
+    link: "https://www.linkedin.com/in/BryjaD/",
     icon: <SiLinkedin />,
   },
   {
@@ -78,6 +78,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <footer>Website made and designed by Dawid Bryja.</footer>
     </div>
   );
 }

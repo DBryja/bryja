@@ -10,7 +10,7 @@ import Details from "./components/Details";
 import MyProjects from "./components/MyProjects";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
-import LanguageSelector from "./components/LanguageSelector";
+import ProgressBar from "./components/ProgressBar";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -23,8 +23,8 @@ function App() {
   return (
     <div className="homepage">
       <Header />
+      <ProgressBar />
       <Hero />
-      <LanguageSelector />
       <Details />
       <MyProjects />
       <AboutMe />

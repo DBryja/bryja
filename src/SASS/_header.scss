@@ -6,7 +6,6 @@
   right: 0;
   height: 100%;
   max-height: 100vh;
-  // background-color: #0f0f0f;
   background-color: black;
   display: flex;
   align-items: center;
@@ -21,6 +20,11 @@
     font-size: 5rem;
     text-transform: lowercase;
     will-change: font-size;
+    user-select: none;
+    cursor: pointer;
+    @include m {
+      font-size: 10rem;
+    }
     @include l {
       font-size: 15rem;
     }
@@ -38,7 +42,7 @@
     span {
       font-size: 0.7rem;
     }
-    svg {
+    .arrows {
       animation: fly 3s cubic-bezier(0.25, 0.75, 0.5, 1.25) infinite;
     }
     font-size: 2rem;
@@ -88,13 +92,5 @@
   }
   to {
     transform: translate(2%, 10%) rotate(3deg);
-  }
-}
-
-option {
-  &.en {
-    background-image: url("../images/flag-en.jpg");
-    width: 100px;
-    height: 100px;
   }
 }

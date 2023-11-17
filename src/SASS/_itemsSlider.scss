@@ -20,7 +20,7 @@
     padding: 5rem 0;
   }
   @include xl {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   &__bar {
     display: flex;
@@ -31,17 +31,18 @@
     padding: 1rem 0.5rem;
     @include l {
       max-width: 90vw;
+      // justify-content: space-between;
       column-gap: 4rem;
       &:nth-child(even) {
-        justify-content: start;
+        justify-content: flex-end;
       }
       &:nth-child(odd) {
-        justify-content: end;
+        justify-content: flex-start;
       }
     }
-    @include xl {
-      max-width: 80vw;
-      column-gap: 6rem;
+    @include xxl {
+      max-width: 1300px;
+      column-gap: 7rem;
     }
   }
   .bar {

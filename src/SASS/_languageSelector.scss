@@ -1,0 +1,15 @@
+.langCheckbox {
+  label {
+    cursor: pointer;
+    svg {
+      opacity: 0.6;
+      height: 15px;
+      @include l {
+        height: 25px;
+      }
+    }
+  }
+  input {
+    display: none;
+  }
+}

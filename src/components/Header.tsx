@@ -35,6 +35,10 @@ export default function Header() {
       tl.progress(window.scrollY / (window.innerHeight / (window.innerHeight < 900 ? 0.9 : 0.8)));
     });
     gsap.ticker.lagSmoothing(0);
+    return () => {
+      tl.kill();
+      lenisHeader.destroy();
+    };
   }, []);
 
   // const fun = (item: HTMLElement) =>

@@ -78,7 +78,9 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <footer>Website made and designed by Dawid Bryja.</footer>
+      <footer>
+        <a href="/">Dawid Bryja</a>
+      </footer>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-
 import { staggerSlide, lenisScrollUpdate } from "./hooks_utils/animations";
 
 import Header from "./components/Header";

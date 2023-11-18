@@ -12,6 +12,10 @@ export default function ProgressBar() {
     lenisProgressBar.on("scroll", () => {
       tlPB.progress(window.scrollY / height);
     });
+    return () => {
+      tlPB.kill();
+      lenisProgressBar.destroy();
+    };
   }, []);
   return <div className="progressBar" ref={barRef}></div>;
 }

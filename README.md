@@ -10,6 +10,7 @@
 
 ## Overview
 ### About the website
+Live view - [https://www.bryja.vercel.app](https://bryja.vercel.app/)
 Simple, yet eye catching and appealing website built in order to showcase my work. :^)
 
 ## Technical informations
@@ -20,9 +21,6 @@ Simple, yet eye catching and appealing website built in order to showcase my wor
 - React+Typescript,
 - TaiwindCSS,
 - GSAP,
-
-**Design**:
-- Figma
 
 **Applications used**:
 - Visual Studio Code,

@@ -19,7 +19,7 @@ Simple, yet eye catching and appealing website built in order to showcase my wor
 
 **Code**:
 - React+Typescript,
-- TaiwindCSS,
+- SASS,
 - GSAP,
 
 **Applications used**:

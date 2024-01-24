@@ -11,7 +11,8 @@
     "h3": "Technologie i narzędzia:"
   },
   "projects": {
-    "h3": "Moje projekty:"
+    "h3": "Moje projekty:",
+    "more": "Po więcej projektów odwiedź mnie na "
   },
   "aboutMe": {
     "h3": "O mnie",

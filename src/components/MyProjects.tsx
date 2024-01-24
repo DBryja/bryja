@@ -1,37 +1,9 @@
 import { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
-import { SiGithub } from "react-icons/si";
 import { slideInAnim } from "../hooks_utils/animations";
 import { useTranslation } from "react-i18next";
-
-const project1 = {
-  heading: "Buddy Explorer",
-  desc: (
-    <>
-      Key Features:
-      <ul>
-        <li>MultiStep register form</li>
-        <li>MySQL users database, registration + modifying profile</li>
-        <li>Searching users with filtering</li>
-        <li>Autocomplete names based on database queries</li>
-      </ul>
-      <span className="break">Tools:</span>
-      <ul>
-        <li>JavaScript (NodeJS, ExpressJS)</li>
-        <li>HTML5(EJS), SASS(SCSS)</li>
-        <li>Programs - VSC, Postman, Figma, Adobe(AP, AI), XAMPP</li>
-      </ul>
-    </>
-  ),
-  links: (
-    <a href="https://github.com/DBryja/Buddy-Explorer" target="_blank" rel="noreferrer">
-      <SiGithub /> Github
-    </a>
-  ),
-  graphics: <img src="/images/BuddyExplorer.png" alt="BuddyExplorer homepage" />,
-};
-
-const projects = [project1, project1, project1];
+import { projects } from "../projects";
+import { SiGithub } from "react-icons/si";
 
 export default function MyProjects() {
   useEffect(() => {
@@ -47,6 +19,12 @@ export default function MyProjects() {
       {projects.map((project, key) => (
         <ProjectCard key={key} {...project} />
       ))}
+      <h5 style={{ textAlign: "center", fontSize: "1.25rem" }}>
+        {t("projects.more")}
+        <a href="https://github.com/DBryja" target="_blank" rel="noreferrer">
+          <SiGithub />
+        </a>
+      </h5>
     </div>
   );
 }

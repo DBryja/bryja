@@ -31,34 +31,68 @@ export const projects = [
     graphics: <img src="/images/elephantCoffee.webp" alt="Elephant Coffee homepage" />,
   },
   {
-    heading: "Room Homepage",
+    heading: "CarDetailing Homepage",
     desc: (
       <>
         Key Features:
         <ul>
-          <li>Image slider</li>
           <li>Responsive design</li>
+          <li>Image and content slider</li>
+          <li>On scroll animations</li>
         </ul>
         <span className="break">Tools:</span>
         <ul>
-          <li>React, Typescript</li>
-          <li>TailwindCSS, HTML5(EJS)</li>
-          <li>Visual Studio Code</li>
+          <li>NextJS, Typescript</li>
+          <li>TailwindCSS, CSS3</li>
+          <li>JetBrains Webstorm, Figma</li>
         </ul>
       </>
     ),
     links: (
       <>
-        <a href="https://github.com/DBryja/room-homepage" target="_blank" rel="noreferrer">
+        <a href="https://github.com/DBryja/car-detailing" target="_blank" rel="noreferrer">
           <SiGithub /> Github
         </a>
-        <a href="https://room-homepage-dbryja.vercel.app/" target="_blank" rel="noreferrer">
+        <a href="https://bryja-car-detailing.vercel.app/" target="_blank" rel="noreferrer">
           <FaGlobe /> Live
         </a>
       </>
     ),
-    graphics: <img src="/images/roomHomepage.webp" alt=" homepage" />,
+    graphics: (
+      <video autoPlay loop>
+        <source src="/images/CarDetailingVideo.webm" type="video/webm" alt="CarDetailing Scroll video" />
+      </video>
+    ),
   },
+  // {
+  //   heading: "Room Homepage",
+  //   desc: (
+  //     <>
+  //       Key Features:
+  //       <ul>
+  //         <li>Image slider</li>
+  //         <li>Responsive design</li>
+  //       </ul>
+  //       <span className="break">Tools:</span>
+  //       <ul>
+  //         <li>React, Typescript</li>
+  //         <li>TailwindCSS, HTML5(EJS)</li>
+  //         <li>Visual Studio Code</li>
+  //       </ul>
+  //     </>
+  //   ),
+  //   links: (
+  //     <>
+  //       <a href="https://github.com/DBryja/room-homepage" target="_blank" rel="noreferrer">
+  //         <SiGithub /> Github
+  //       </a>
+  //       <a href="https://room-homepage-dbryja.vercel.app/" target="_blank" rel="noreferrer">
+  //         <FaGlobe /> Live
+  //       </a>
+  //     </>
+  //   ),
+  //   graphics: <img src="/images/roomHomepage.webp" alt=" homepage" />,
+  // },
   {
     heading: "Buddy Explorer",
     desc: (

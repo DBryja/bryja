@@ -20,8 +20,8 @@ export default function MyProjects() {
         <ProjectCard key={key} {...project} />
       ))}
       <h5 style={{ textAlign: "center", fontSize: "1.25rem" }}>
-        {t("projects.more")}
         <a href="https://github.com/DBryja" target="_blank" rel="noreferrer">
+          {t("projects.more")}
           <SiGithub />
         </a>
       </h5>

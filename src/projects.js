@@ -28,7 +28,11 @@ export const projects = [
         </a>
       </>
     ),
-    graphics: <img src="/images/elephantCoffee.webp" alt="Elephant Coffee homepage" />,
+    graphics: (
+      <video autoPlay loop>
+        <source src="/images/ElephantCoffee.webm" type="video/webm" alt="ElephantCoffee scroll video" />
+      </video>
+      ),
   },
   {
     heading: "CarDetailing Homepage",
